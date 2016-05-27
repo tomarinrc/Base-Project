@@ -1,8 +1,5 @@
-// Colors
-@import "partials/colors";
-
 // CSS Reset
-@import "vendor/reset/reset/";
-
-// Site Layout
-@import "layout/header";
+@import "reset";
+// Import ALL THE THINGS
+@import "partials/header";
+@import "partials/post";
