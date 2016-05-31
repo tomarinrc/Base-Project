@@ -1,5 +1,14 @@
-// CSS Reset
-@import "reset";
+//Include The Modules
+@import "modules/all";
+// Site Globals
+body {
+  font-size: 18px;
+  line-height: 1.72em;
+  font-family: 'Roboto', sans-serif;
+  background: $clouds;
+  //font-family: 'Montserrat', sans-serif;
+};
 // Import ALL THE THINGS
 @import "partials/header";
-@import "partials/post";
+@import "partials/body";
+@import "partials/posts";

@@ -3,24 +3,87 @@ header.site-header {
   overflow: hidden;
   nav {
     width: 100%;
-    height: 20vh;
+    height: 240px;
     background: $orange;
-  }
-  div.angle {
     position: relative;
-    width: 0;
-    height: 0;
-    border-top: 10vh solid $orange;
-    border-right: 100vw solid transparent;
-    &:after {
-      position: absolute;
-      z-index: -1;
-      top: -10vh;
-      width: 100;
-      height: 0;
-      content: '';
-      border-top: 10vh solid $pumpkin;
-      border-right: 120vw solid transparent;
+    div.container {
+      @include vcenter;
+    }
+    figure.site-header-hero {
+      img.logo {
+        //height: 120px;
+      }
+      figcaption {
+        color: white;
+        font-style: italic;
+        b {
+          font-weight: 700;
+        }
+      }
     }
   }
+
+  div.angle {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-top: 10vh solid $orange;
+      border-right: 100vw solid transparent;
+      position: relative;
+      &:after {
+        position: absolute;
+        z-index: -1;
+        top: -10vh;
+        width: 100;
+        height: 0;
+        content: '';
+        border-top: 10vh solid $carrot;
+        border-right: 136vw solid transparent;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:-10vh;
+      }
+    }
+  /*
+  div.angle {
+    position: relative;
+    .triangle-1 {
+        width: 0;
+        height: 0;
+        padding-bottom: 10%;
+        padding-left: 140%;
+        overflow: hidden;
+    }
+    .triangle-1:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: -9999px;
+        border-bottom: 360px solid transparent;
+        border-left: 9999px solid $carrot;
+    }*/
+    /*Up-left pointing*/
+    /*.triangle-2 {
+        width: 0;
+        height: 0;
+        padding-bottom: 10%;
+        padding-left: 100%;
+        overflow: hidden;
+        position: absolute;
+        top:0;
+    }
+    .triangle-2:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: -9999px;
+        border-bottom: 480px solid transparent;
+        border-left: 9999px solid $orange;
+        position: absolute;
+        top:0;
+    }
+  }*/
 }
