@@ -4,10 +4,15 @@
 body {
   font-size: 18px;
   line-height: 1.72em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hind', sans-serif;
   background: $clouds;
   //font-family: 'Montserrat', sans-serif;
 };
+@media (min-width: 1200px) {
+    .container{
+        max-width: 920px;
+    }
+}
 // Import ALL THE THINGS
 @import "partials/header";
 @import "partials/body";
