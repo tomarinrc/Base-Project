@@ -8,6 +8,12 @@ body {
   background: $clouds;
   background-image: url(img/background.png);
   //font-family: 'Montserrat', sans-serif;
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 };
 @media (min-width: 1200px) {
     .container{

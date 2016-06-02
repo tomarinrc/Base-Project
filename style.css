@@ -4,6 +4,12 @@ body {
   font-family: 'Hind', sans-serif;
   background: #ecf0f1;
   background-image: url(img/background.png); }
+  @media (max-width: 768px) {
+    body {
+      font-size: 17px; } }
+  @media (max-width: 480px) {
+    body {
+      font-size: 16px; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -73,7 +79,7 @@ header.site-header {
         width: 60%; } }
     @media (max-width: 480px) {
       header.site-header nav figure.site-header-hero img.logo {
-        width: 80%; } }
+        width: 90%; } }
     header.site-header nav figure.site-header-hero figcaption {
       color: white;
       font-style: italic; }
@@ -100,72 +106,77 @@ header.site-header {
       z-index: -1;
       top: -10vh; }
 
-article {
-  position: relative;
-  top: -10vh;
-  margin-bottom: -4vh; }
-  article .post-top-angle {
-    width: 100%;
+article:nth-of-type(1) {
+  margin-top: 4rem; }
+article .post-top-angle {
+  width: 100%;
+  height: 0;
+  padding-top: 20%;
+  overflow: hidden;
+  margin: -20% 0 0; }
+  article .post-top-angle.post-top-angle-call:after {
+    border-right: 9999px solid #f39c12; }
+  article .post-top-angle:after {
+    content: "";
+    display: block;
+    width: 0;
     height: 0;
-    padding-top: 10%;
-    overflow: hidden; }
-    article .post-top-angle.post-top-angle-call {
-      margin: -9rem 0 0; }
-      article .post-top-angle.post-top-angle-call:after {
-        border-right: 9999px solid #f39c12; }
-    article .post-top-angle:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      margin-top: -480px;
-      border-top: 480px solid transparent;
-      border-right: 9999px solid white; }
-  article .post-content {
-    background: white;
-    padding: 2rem 0 4rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-    article .post-content .post-title {
-      font-size: 2em;
-      font-family: 'Montserrat', sans-serif;
-      margin: 0 4rem;
-      padding: 4rem 0;
-      color: #2c3e50; }
-    article .post-content .post-featured img {
-      display: block;
-      width: 100%; }
-    article .post-content .post-copy {
-      margin: 4rem; }
-    article .post-content q, article .post-content blockquote {
-      font-size: 1.6em;
-      line-height: 1.2em;
-      font-family: 'Montserrat', sans-serif;
-      border-left: 1rem solid #2c3e50;
-      padding: 1rem 2rem;
-      margin: 2.8rem 0;
-      color: #34495e; }
-  article a.post-read-more {
-    padding: 1em;
-    background: #f39c12;
-    color: white;
+    margin-top: -480px;
+    border-top: 480px solid transparent;
+    border-right: 9999px solid white; }
+article .post-content {
+  background: white;
+  padding: 2rem 0 4rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  article .post-content .post-title {
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    width: 100%;
-    text-align: center;
-    display: block; }
-  article .post-bottom-angle {
-    width: 0%;
+    margin: 0 4rem;
+    padding: 4rem 0;
+    color: #2c3e50; }
+    @media (max-width: 480px) {
+      article .post-content .post-title {
+        margin: 0 2rem; } }
+  article .post-content .post-featured img {
+    display: block;
+    width: 100%; }
+  article .post-content .post-copy {
+    margin: 4rem; }
+    @media (max-width: 480px) {
+      article .post-content .post-copy {
+        margin: 2rem; } }
+  article .post-content q, article .post-content blockquote {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    border-left: 1rem solid #2c3e50;
+    padding: 1rem 2rem;
+    margin: 2.8rem 0;
+    color: #34495e; }
+article a.post-read-more {
+  background: #f39c12;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  width: 100%;
+  text-align: center;
+  display: block; }
+  @media (max-width: 768px) {
+    article a.post-read-more {
+      padding: 1em; } }
+article .post-bottom-angle {
+  width: 0;
+  height: 0;
+  padding-bottom: 10%;
+  padding-left: 100%;
+  overflow: hidden; }
+  article .post-bottom-angle:after {
+    content: "";
+    display: block;
+    width: 0;
     height: 0;
-    padding-bottom: 10%;
-    padding-left: 100%;
-    overflow: hidden; }
-    article .post-bottom-angle:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      margin-left: -9999px;
-      border-bottom: 480px solid transparent;
-      border-left: 9999px solid #f39c12; }
+    margin-left: -9999px;
+    border-bottom: 480px solid transparent;
+    border-left: 9999px solid #f39c12; }
 
 /*# sourceMappingURL=style.css.map */
