@@ -1,3 +1,9 @@
+/*
+Theme Name: ENTP.fyi
+Author: TomAricRC
+Description: Theme for ENTP.fyi
+Tags: ENTP
+*/
 //Include The Modules
 @import "modules/all";
 // Site Globals
@@ -5,8 +11,13 @@ body {
   font-size: 18px;
   line-height: 1.72em;
   font-family: 'Hind', sans-serif;
-  background: $clouds;
-  background-image: url(img/background.png);
+  background: $clouds url(img/background.png) 0 0 repeat;
+  background: -moz-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('http://www.skrenta.com/images/stackoverflow.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236,240,241,.96)), color-stop(72%, rgba(236,240,241,.72)), color-stop(100%, rgba(236,240,241,0))), url('img/background.png');
+  background: -webkit-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: -o-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: -ms-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: linear-gradient(to bottom, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
   //font-family: 'Montserrat', sans-serif;
   @media (max-width: 768px) {
     font-size: 17px;
