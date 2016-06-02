@@ -2,7 +2,8 @@ body {
   font-size: 18px;
   line-height: 1.72em;
   font-family: 'Hind', sans-serif;
-  background: #ecf0f1; }
+  background: #ecf0f1;
+  background-image: url(img/background.png); }
 
 @media (min-width: 1200px) {
   .container {
@@ -53,7 +54,8 @@ header.site-header {
   header.site-header nav {
     width: 100%;
     background: #f39c12;
-    position: relative; }
+    position: relative;
+    box-shadow: 0 24px 20px rgba(0, 0, 0, 0.19), 0 36px 24px rgba(0, 0, 0, 0.23); }
     @media (min-width: 480px) {
       header.site-header nav {
         height: 180px; } }
@@ -100,12 +102,17 @@ header.site-header {
 
 article {
   position: relative;
-  top: -10vh; }
+  top: -10vh;
+  margin-bottom: -4vh; }
   article .post-top-angle {
     width: 100%;
     height: 0;
     padding-top: 10%;
     overflow: hidden; }
+    article .post-top-angle.post-top-angle-call {
+      margin: -9rem 0 0; }
+      article .post-top-angle.post-top-angle-call:after {
+        border-right: 9999px solid #f39c12; }
     article .post-top-angle:after {
       content: "";
       display: block;
@@ -116,7 +123,7 @@ article {
       border-right: 9999px solid white; }
   article .post-content {
     background: white;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
     article .post-content .post-title {
       font-size: 2em;
@@ -135,7 +142,30 @@ article {
       font-family: 'Montserrat', sans-serif;
       border-left: 1rem solid #2c3e50;
       padding: 1rem 2rem;
-      margin: 3.6rem 0;
+      margin: 2.8rem 0;
       color: #34495e; }
+  article a.post-read-more {
+    padding: 1em;
+    background: #f39c12;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    width: 100%;
+    text-align: center;
+    display: block; }
+  article .post-bottom-angle {
+    width: 0%;
+    height: 0;
+    padding-bottom: 10%;
+    padding-left: 100%;
+    overflow: hidden; }
+    article .post-bottom-angle:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: -9999px;
+      border-bottom: 480px solid transparent;
+      border-left: 9999px solid #f39c12; }
 
 /*# sourceMappingURL=style.css.map */
