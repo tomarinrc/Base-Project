@@ -8,13 +8,14 @@ body {
   font-size: 18px;
   line-height: 1.72em;
   font-family: 'Hind', sans-serif;
-  background: #ecf0f1 url(img/background.png) 0 0 repeat;
-  background: -moz-linear-gradient(top, rgba(236, 240, 241, 0.96) 0%, rgba(236, 240, 241, 0.72) 72%, rgba(236, 240, 241, 0) 100%), url("http://www.skrenta.com/images/stackoverflow.jpg");
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236, 240, 241, 0.96)), color-stop(72%, rgba(236, 240, 241, 0.72)), color-stop(100%, rgba(236, 240, 241, 0))), url("img/background.png");
-  background: -webkit-linear-gradient(top, rgba(236, 240, 241, 0.96) 0%, rgba(236, 240, 241, 0.72) 72%, rgba(236, 240, 241, 0) 100%), url("img/background.png");
-  background: -o-linear-gradient(top, rgba(236, 240, 241, 0.96) 0%, rgba(236, 240, 241, 0.72) 72%, rgba(236, 240, 241, 0) 100%), url("img/background.png");
-  background: -ms-linear-gradient(top, rgba(236, 240, 241, 0.96) 0%, rgba(236, 240, 241, 0.72) 72%, rgba(236, 240, 241, 0) 100%), url("img/background.png");
-  background: linear-gradient(to bottom, rgba(236, 240, 241, 0.96) 0%, rgba(236, 240, 241, 0.72) 72%, rgba(236, 240, 241, 0) 100%), url("img/background.png"); }
+  background: #ecf0f1;
+  /*background: $clouds url(img/background.png) 0 0 repeat;
+  background: -moz-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('http://www.skrenta.com/images/stackoverflow.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236,240,241,.96)), color-stop(72%, rgba(236,240,241,.72)), color-stop(100%, rgba(236,240,241,0))), url('img/background.png');
+  background: -webkit-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: -o-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: -ms-linear-gradient(top, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');
+  background: linear-gradient(to bottom, rgba(236,240,241,.96) 0%, rgba(236,240,241,.72) 72%, rgba(236,240,241,0) 100%), url('img/background.png');*/ }
   @media (max-width: 768px) {
     body {
       font-size: 17px; } }
@@ -71,8 +72,7 @@ header.site-header {
   header.site-header nav {
     width: 100%;
     background: #f39c12;
-    position: relative;
-    box-shadow: 0 24px 20px rgba(0, 0, 0, 0.19), 0 36px 24px rgba(0, 0, 0, 0.23); }
+    position: relative; }
     @media (min-width: 480px) {
       header.site-header nav {
         height: 180px; } }
@@ -110,12 +110,15 @@ header.site-header {
       width: 100;
       height: 0;
       content: '';
-      border-top: 10vh solid #e67e22;
+      border-top: 10vh solid #d35400;
       border-right: 136vw solid transparent;
       content: "";
       position: absolute;
       z-index: -1;
       top: -10vh; }
+
+main {
+  margin-bottom: 2em; }
 
 article:nth-of-type(1) {
   margin-top: 4rem; }
@@ -137,8 +140,7 @@ article .post-top-angle {
     border-right: 9999px solid white; }
 article .post-content {
   background: white;
-  padding: 2rem 0 4rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  padding: 2rem 0 4rem; }
   article .post-content .post-title {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;

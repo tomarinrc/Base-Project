@@ -10,12 +10,11 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
 
   <!--[if lt IE 9]>
   <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <?php wp_head();?>
 </head>
 
 <body>
