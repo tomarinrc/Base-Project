@@ -145,7 +145,7 @@ article .post-content {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     margin: 0 4rem;
-    padding: 4rem 0;
+    padding: 3rem 0;
     color: #2c3e50; }
     @media (max-width: 480px) {
       article .post-content .post-title {
@@ -154,7 +154,7 @@ article .post-content {
     display: block;
     width: 100%; }
   article .post-content .post-copy {
-    margin: 4rem; }
+    margin: 3rem 4rem; }
     @media (max-width: 480px) {
       article .post-content .post-copy {
         margin: 2rem; } }
@@ -177,6 +177,13 @@ article .post-read-more {
   @media (max-width: 768px) {
     article .post-read-more {
       padding: 1em; } }
+article a.post-read-more-link {
+  overflow: auto;
+  zoom: 1;
+  display: block;
+  position: relative;
+  z-index: 999;
+  text-decoration: none; }
 article .post-bottom-angle {
   width: 0;
   height: 0;
@@ -191,5 +198,7 @@ article .post-bottom-angle {
     margin-left: -9999px;
     border-bottom: 480px solid transparent;
     border-left: 9999px solid #f39c12; }
+  article .post-bottom-angle.post-bottom-angle-call:after {
+    border-left: 9999px solid white; }
 
 /*# sourceMappingURL=style.css.map */

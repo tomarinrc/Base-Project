@@ -38,7 +38,7 @@ article {
       @media (max-width: 480px) {
         margin: 0 2rem;
       }
-      padding: 4rem 0;
+      padding: 3rem 0;
       color: $midnightblue;
     }
     .post-featured {
@@ -49,7 +49,7 @@ article {
       }
     }
     .post-copy {
-      margin: 4rem;
+      margin: 3rem 4rem;
       @media (max-width: 480px) {
         margin: 2rem;
       }
@@ -76,6 +76,14 @@ article {
     text-align: center;
     display: block;
   }
+  a.post-read-more-link {
+    overflow: auto;
+    zoom: 1;
+    display:block;
+    position: relative;
+    z-index: 999;
+    text-decoration: none;
+  }
   .post-bottom-angle {
     width: 0;
     height: 0;
@@ -90,6 +98,9 @@ article {
       margin-left: -9999px;
       border-bottom: 480px solid transparent;
       border-left: 9999px solid $orange;
+    }
+    &.post-bottom-angle-call:after {
+      border-left: 9999px solid white;
     }
   }
 }

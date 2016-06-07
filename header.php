@@ -22,7 +22,7 @@
     <nav>
       <div class="container">
         <figure class="site-header-hero row">
-          <img class="logo col-sm-6 col-md-5 col-lg-5" src="img/logo.svg" />
+          <img class="logo col-sm-6 col-md-5 col-lg-5" src="<?php bloginfo('template_directory');?>/img/logo.png" />
           <figcaption class="col-sm-12 col-sm-offset-1">Ongoing <b>MBTI</b> Information on <b>ENTPs</b>, by an <b>ENTP</b> who doesn't believe in <b>MBTI</b>.</figcaption>
         </figure>
       </div>
