@@ -1,7 +1,7 @@
 <article>
   <section class="post-top-angle"></section>
   <section class="post-content">
-    <h2 class="post-title"><?php the_title(); ?></h2>
+    <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     <?php if ( has_post_thumbnail() ) { ?>
       <figure class="post-featured">
         <?php the_post_thumbnail(); ?>
@@ -15,7 +15,7 @@
   </section>
   <?php if ($pos=strpos($post->post_content, '<!--more-->')) { ?>
     <section class="post-top-angle post-top-angle-call"></section>
-    <a href="<?php the_permalink() ?>#more-<?php the_id() ?>" class="post-read-more-link">
+    <a href="<?php the_permalink() ?>" class="post-read-more-link">
       <div class="post-read-more">
         READ MORE
       </div>

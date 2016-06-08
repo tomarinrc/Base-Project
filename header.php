@@ -11,10 +11,10 @@
   <link href='https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
-
   <!--[if lt IE 9]>
   <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <?php wp_head();?>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <nav>
       <div class="container">
         <figure class="site-header-hero row">
-          <img class="logo col-sm-6 col-md-5 col-lg-5" src="<?php bloginfo('template_directory');?>/img/logo.png" />
+          <img class="logo col-sm-7 col-md-5 col-lg-5" src="<?php bloginfo('template_directory');?>/img/logo.svg" />
           <figcaption class="col-sm-12 col-sm-offset-1">Ongoing <b>MBTI</b> Information on <b>ENTPs</b>, by an <b>ENTP</b> who doesn't believe in <b>MBTI</b>.</figcaption>
         </figure>
       </div>

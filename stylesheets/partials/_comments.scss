@@ -1,0 +1,182 @@
+@import "base";
+.wc-form-top-angle {
+  width: 100%;
+  height: 0;
+  padding-top: 20%;
+  overflow: hidden;
+  margin: -20% 0 0;
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -480px;
+    border-top: 480px solid transparent;
+    border-right: 9999px solid white;
+  }
+}
+#wc-comment-header {
+  padding: 0 !important;
+  font-size: 1.4em !important;
+  max-width: initial !important;
+  margin: 2rem 0 0 !important;
+  font-family: 'Montserrat', sans-serif;
+  color: $wetasphalt;
+}
+#wpcomm {
+  padding: 1px 0 10px;
+  border-top: none !important;
+  max-width: 950px;
+  margin: 1rem auto !important;
+}
+#wpcomm .wc-comment-title {
+  margin: 0;
+  line-height: 18px;
+  font-weight: 400 !important;
+  padding: 0 !important;
+  margin-bottom: 10px;
+  font-size: 1.2em !important;
+  text-align: left !important;
+  border-bottom: none !important;
+  padding-bottom: 10px;
+}
+#wpcomm .wc-field-comment .wc-field-textarea {
+  margin-left: 0 !important;
+  position: relative;
+}
+#wpcomm .wpdiscuz-textarea-wrap {
+  border: none !important;
+}
+#wpcomm .wc-field-comment .wc-field-avatararea {
+  display: none;
+}
+#wpcomm .wc-comment-bar {
+  width: 100%;
+  padding: 0 0 4rem !important;
+  display: block;
+  @media (max-width: 480px) {
+    padding: 0 0 2rem !important;
+  }
+}
+#wpcomm .wc-comment .wc-comment-left {
+  display: none;
+}
+#wpcomm .wc-form-wrapper {
+  border: none !important;
+  padding: 0 !important;
+}
+#wpcomm .wc-field-comment {
+  margin: 0 !important;
+}
+#wpcomm .wc-form-footer {
+  margin-left: 0 !important;
+  padding: 0 4rem !important;
+  @media (max-width: 480px) {
+    padding: 0 2rem !important;
+  }
+}
+#wpcomm .wc-field-comment .wc-field-textarea.wpdiscuz-item {
+  border: none!important;
+  padding: 2rem 4rem !important;
+  @media (max-width: 480px) {
+    padding: 2rem !important;
+  }
+  textarea {
+    resize: none;
+    /* padding: 10px; */
+    vertical-align: top;
+    padding: .8rem 0 0 0 !important;
+    font-size: 1em;
+    border-left: none;
+    font-family: 'Hind', sans-serif !important;
+    &:focus {
+      box-shadow: none;
+    }
+    @media (max-width: 480px) {
+      padding: .4rem 0 0 0 !important;
+      border-left: none;
+    }
+  }
+}
+#wpcomm .wc-field-name input[type="text"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0 !important;
+  font-size: 1em !important;
+  margin: 0;
+  height: initial !important;
+  border: none !important;
+  font-family: 'Hind', sans-serif !important;
+  &:focus {
+    box-shadow: none;
+  }
+}
+#wpcomm .wc-field-email input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0 !important;
+  font-size: 1em !important;
+  margin: 0;
+  height: initial !important;
+  border: none !important;
+  font-family: 'Hind', sans-serif !important;
+  &:focus {
+    box-shadow: none;
+  }
+}
+#wpcomm .wc-field-captcha.wpdiscuz-item .wc-captcha-input {
+  font-size: 1em !important;
+}
+#wpcomm .wc-field-captcha .wc-captcha-input input[type="text"] {
+  width: 100%;
+  padding: 1rem 0 !important;
+  font-size: 1em !important;
+  height: initial !important;
+  border: none !important;
+  font-family: 'Hind', sans-serif !important;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.wcThreadWrapper {
+  font-family: 'Hind', sans-serif !important;
+}
+#wpcomm form .wpdiscuz-item {
+  border: none;
+}
+.wc_comm_submit {
+  width: 100%;
+  border: none;
+  background: $orange;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: white;
+  padding: .6rem;
+}
+.wpdiscuz-front-actions {
+  margin: 4rem 0;
+}
+#wpcomm .wc-comment .wc-comment-right {
+  margin-left: 0 !important;
+  border: none !important;
+}
+#wpcomm .wc-thread-wrapper {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+#wpcomm .wpdiscuz-sort-buttons, #wpcomm .wpdiscuz-sort-button {
+  font-size: .9em !important;
+  @media screen and (max-width: 420px) {
+    font-size: 1em!important;
+  }
+}
+#wpcomm .wc-comment-author {
+  font-size: 1em !important;
+}
+#wpcomm .wc-comment-author a {
+  font-size: 1em !important;
+}
+#wpcomm .wc-comment-text {
+  font-size: 1em !important;
+}

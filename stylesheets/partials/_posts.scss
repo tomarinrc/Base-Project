@@ -1,8 +1,8 @@
 @import "base";
 article {
-    //position: relative;
-    //top: -10vh;
-  &:nth-of-type(1){
+  //position: relative;
+  //top: -10vh;
+  &:nth-of-type(1) {
     margin-top: 4rem;
   }
   .post-top-angle {
@@ -11,11 +11,6 @@ article {
     padding-top: 20%;
     overflow: hidden;
     margin: -20% 0 0;
-    &.post-top-angle-call {
-      &:after {
-        border-right: 9999px solid $orange;
-      }
-    }
     &:after {
       content: "";
       display: block;
@@ -25,6 +20,11 @@ article {
       border-top: 480px solid transparent;
       border-right: 9999px solid white;
     }
+    &.post-top-angle-call {
+      &:after {
+        border-right: 9999px solid $orange;
+      }
+    }
   }
   .post-content {
     background: white;
@@ -33,29 +33,34 @@ article {
     .post-title {
       font-size: 2em;
       font-family: 'Montserrat', sans-serif;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
       // font-style: italic;
       margin: 0 4rem;
       @media (max-width: 480px) {
         margin: 0 2rem;
       }
-      padding: 3rem 0;
+      padding: 3rem 0 1rem;
       color: $midnightblue;
     }
     .post-featured {
       img {
         display: block;
         width: 100%;
-        // margin: 2rem 4rem;
+        margin: 2rem 0;
       }
     }
     .post-copy {
-      margin: 3rem 4rem;
+      margin: 1rem 4rem;
       @media (max-width: 480px) {
         margin: 2rem;
       }
     }
-    q, blockquote {
-      font-size:1.6em;
+    blockquote,
+    q {
+      font-size: 1.6em;
       line-height: 1.2em;
       font-family: 'Montserrat', sans-serif;
       border-left: 1rem solid $midnightblue;
@@ -79,7 +84,7 @@ article {
   a.post-read-more-link {
     overflow: auto;
     zoom: 1;
-    display:block;
+    display: block;
     position: relative;
     z-index: 999;
     text-decoration: none;
