@@ -20,6 +20,9 @@ article {
       border-top: 480px solid transparent;
       border-right: 9999px solid white;
     }
+    &.midblue:after {
+      border-right: 9999px solid $midnightblue;
+    }
     &.post-top-angle-call {
       &:after {
         border-right: 9999px solid $orange;
@@ -50,6 +53,7 @@ article {
         display: block;
         width: 100%;
         margin: 2rem 0;
+        height: auto;
       }
     }
     .post-copy {
@@ -80,6 +84,53 @@ article {
     width: 100%;
     text-align: center;
     display: block;
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    transition: color 1.8s;
+    &.midblue {
+      background: $midnightblue;
+    }
+    &:hover {
+      transition: color 0.2s;
+      color: rgba(0,0,0,0);
+    }
+  }
+  .post-read-more-effect {
+    text-transform: uppercase;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.75;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 0.6rem;
+      width: 100%;
+      top: 60%;
+      margin-top: -8px;
+      right: 0;
+      background: white;
+      transform: translate3d(-100%,0,0);
+      transition: transform 0.4s;
+      transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+    &:hover:after {
+      transform: translate3d(100%,0,0);
+    }
+    &:before {
+      content: attr(data-letters);
+      position: absolute;
+      z-index: 2;
+      overflow: hidden;
+      color: white;
+      white-space: nowrap;
+      width: 0;
+      left: 0;
+      transition: width 0.4s 0.3s;
+    }
+    &:hover:before {
+      width: 100%;
+    }
   }
   a.post-read-more-link {
     overflow: auto;
@@ -103,6 +154,9 @@ article {
       margin-left: -9999px;
       border-bottom: 480px solid transparent;
       border-left: 9999px solid $orange;
+    }
+    &.midblue:after {
+      border-left: 9999px solid $midnightblue;
     }
     &.post-bottom-angle-call:after {
       border-left: 9999px solid white;

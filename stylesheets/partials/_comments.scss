@@ -160,10 +160,15 @@
 #wpcomm .wc-comment .wc-comment-right {
   margin-left: 0 !important;
   border: none !important;
+  padding: 2rem 4rem !important;
+  @media (max-width: 480px) {
+    padding: 2rem !important;
+  }
 }
 #wpcomm .wc-thread-wrapper {
     padding: 0 !important;
     margin-bottom: 0 !important;
+    margin: 4rem 0;
 }
 #wpcomm .wpdiscuz-sort-buttons, #wpcomm .wpdiscuz-sort-button {
   font-size: .9em !important;
@@ -172,11 +177,15 @@
   }
 }
 #wpcomm .wc-comment-author {
-  font-size: 1em !important;
+  font-size: .9em !important;
 }
 #wpcomm .wc-comment-author a {
   font-size: 1em !important;
 }
 #wpcomm .wc-comment-text {
   font-size: 1em !important;
+}
+#wpcomm .wc-comment-header {
+    margin-bottom: 1rem !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
