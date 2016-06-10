@@ -150,7 +150,7 @@ article .post-content {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     margin: 0 4rem;
-    padding: 3rem 0 1rem;
+    padding: 3rem 0 0;
     color: #2c3e50; }
     article .post-content .post-title a {
       color: inherit;
@@ -158,25 +158,77 @@ article .post-content {
     @media (max-width: 480px) {
       article .post-content .post-title {
         margin: 0 2rem; } }
+  article .post-content .post-date {
+    font-size: 0.8em;
+    margin: 0 4rem;
+    color: #2c3e50;
+    font-weight: bold; }
+    @media (max-width: 480px) {
+      article .post-content .post-date {
+        margin: 0 2rem; } }
   article .post-content .post-featured img {
     display: block;
     width: 100%;
     margin: 2rem 0;
     height: auto; }
+  article .post-content .post-tldr-link {
+    display: block;
+    width: 100%;
+    background: #2c3e50;
+    margin: -2rem 0 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; }
   article .post-content .post-copy {
-    margin: 1rem 4rem; }
+    margin: 4rem; }
+    article .post-content .post-copy em {
+      font-style: italic; }
+    article .post-content .post-copy p {
+      margin: 0 0 4rem !important; }
+    article .post-content .post-copy div.wp-caption {
+      width: 100% !important; }
+      article .post-content .post-copy div.wp-caption img {
+        width: 100%;
+        height: auto; }
+      article .post-content .post-copy div.wp-caption .wp-caption-text {
+        font-weight: bold;
+        font-size: 0.8em;
+        font-style: italic; }
     @media (max-width: 480px) {
       article .post-content .post-copy {
         margin: 2rem; } }
-  article .post-content blockquote,
-  article .post-content q {
-    font-size: 1.6em;
-    line-height: 1.2em;
-    font-family: 'Montserrat', sans-serif;
-    border-left: 1rem solid #2c3e50;
-    padding: 1rem 2rem;
-    margin: 2.8rem 0;
-    color: #34495e; }
+    article .post-content .post-copy blockquote,
+    article .post-content .post-copy q {
+      font-size: 1.6em;
+      line-height: 1.2em;
+      font-family: 'Montserrat', sans-serif;
+      border-left: 1rem solid #34495e;
+      padding: 1rem 2rem;
+      margin: 0 0 4rem;
+      color: #2c3e50; }
+      article .post-content .post-copy blockquote.me,
+      article .post-content .post-copy q.me {
+        border-left: 1rem solid #f39c12;
+        color: #e67e22; }
+      article .post-content .post-copy blockquote p,
+      article .post-content .post-copy q p {
+        margin: 0 !important; }
+  article .post-content #TLDR {
+    padding: 4rem;
+    background: #2c3e50;
+    color: white; }
+    @media (max-width: 480px) {
+      article .post-content #TLDR {
+        padding: 2rem; } }
+    article .post-content #TLDR h2 {
+      margin: 0 0 1rem;
+      font-size: 2em;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif; }
 article .post-read-more {
   background: #f39c12;
   color: white;
@@ -370,7 +422,8 @@ article .post-bottom-angle {
   margin: 0;
   height: initial !important;
   border: none !important;
-  font-family: 'Hind', sans-serif !important; }
+  font-family: 'Hind', sans-serif !important;
+  display: none !important; }
   #wpcomm .wc-field-email input[type="email"]:focus {
     box-shadow: none; }
 
@@ -404,7 +457,7 @@ article .post-bottom-angle {
   padding: .6rem; }
 
 .wpdiscuz-front-actions {
-  margin: 4rem 0; }
+  margin: 2rem 0; }
 
 #wpcomm .wc-comment .wc-comment-right {
   margin-left: 0 !important;
@@ -417,7 +470,7 @@ article .post-bottom-angle {
 #wpcomm .wc-thread-wrapper {
   padding: 0 !important;
   margin-bottom: 0 !important;
-  margin: 4rem 0; }
+  margin: 2rem 0; }
 
 #wpcomm .wpdiscuz-sort-buttons, #wpcomm .wpdiscuz-sort-button {
   font-size: .9em !important; }

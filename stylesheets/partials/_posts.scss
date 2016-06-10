@@ -45,8 +45,17 @@ article {
       @media (max-width: 480px) {
         margin: 0 2rem;
       }
-      padding: 3rem 0 1rem;
+      padding: 3rem 0 0;
       color: $midnightblue;
+    }
+    .post-date {
+      font-size: 0.8em;
+      margin: 0 4rem;
+      color: $midnightblue;
+      font-weight: bold;
+      @media (max-width: 480px) {
+        margin: 0 2rem;
+      }
     }
     .post-featured {
       img {
@@ -56,21 +65,74 @@ article {
         height: auto;
       }
     }
+    .post-tldr-link {
+      display: block;
+      width: 100%;
+      background: $midnightblue;
+      margin: -2rem 0 2rem;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+    }
     .post-copy {
-      margin: 1rem 4rem;
+      margin: 4rem;
+      em {
+        font-style: italic;
+      }
+      p {
+        margin: 0 0 4rem !important;
+      }
+      div.wp-caption {
+        width: 100% !important;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .wp-caption-text {
+          font-weight: bold;
+          font-size: 0.8em;
+          font-style: italic;
+        }
+      }
       @media (max-width: 480px) {
         margin: 2rem;
       }
+      blockquote,
+      q {
+        font-size: 1.6em;
+        line-height: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        border-left: 1rem solid $wetasphalt;
+        padding: 1rem 2rem;
+        margin: 0 0 4rem;
+        color: $midnightblue;
+        &.me {
+          border-left: 1rem solid $orange;
+          color: $carrot;
+        }
+        p {
+          margin: 0 !important;
+        }
+      }
     }
-    blockquote,
-    q {
-      font-size: 1.6em;
-      line-height: 1.2em;
-      font-family: 'Montserrat', sans-serif;
-      border-left: 1rem solid $midnightblue;
-      padding: 1rem 2rem;
-      margin: 2.8rem 0;
-      color: $wetasphalt;
+    #TLDR {
+      padding: 4rem;
+      background: $midnightblue;
+      color: white;
+      @media (max-width: 480px) {
+        padding: 2rem;
+      }
+      h2 {
+        margin: 0 0 1rem;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+
+      }
     }
   }
   .post-read-more {

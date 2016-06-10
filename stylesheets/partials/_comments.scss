@@ -120,6 +120,7 @@
   height: initial !important;
   border: none !important;
   font-family: 'Hind', sans-serif !important;
+  display: none !important;
   &:focus {
     box-shadow: none;
   }
@@ -155,7 +156,7 @@
   padding: .6rem;
 }
 .wpdiscuz-front-actions {
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 #wpcomm .wc-comment .wc-comment-right {
   margin-left: 0 !important;
@@ -168,7 +169,7 @@
 #wpcomm .wc-thread-wrapper {
     padding: 0 !important;
     margin-bottom: 0 !important;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 #wpcomm .wpdiscuz-sort-buttons, #wpcomm .wpdiscuz-sort-button {
   font-size: .9em !important;
