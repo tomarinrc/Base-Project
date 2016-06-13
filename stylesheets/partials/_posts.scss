@@ -53,6 +53,11 @@ article {
       margin: 0 4rem;
       color: $midnightblue;
       font-weight: bold;
+      .post-author {
+        color: $carrot;
+        font-weight: normal;
+        font-family: 'Hind', sans-serif;
+      }
       @media (max-width: 480px) {
         margin: 0 2rem;
       }
@@ -84,7 +89,7 @@ article {
         font-style: italic;
       }
       p {
-        margin: 0 0 4rem !important;
+        margin: 0 0 2rem !important;
       }
       div.wp-caption {
         width: 100% !important;

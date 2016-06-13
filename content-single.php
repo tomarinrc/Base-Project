@@ -2,7 +2,7 @@
   <section class="post-top-angle"></section>
   <section class="post-content">
     <h1 class="post-title"><?php the_title(); ?></h1>
-    <span class="post-date"><?php the_date(); ?></span>
+    <span class="post-date"><?php the_date(); ?> <span class="post-author">by <?php the_author(); ?></span></span>
     <?php if ( has_post_thumbnail() ) { ?>
       <figure class="post-featured">
         <?php the_post_thumbnail(); ?>
