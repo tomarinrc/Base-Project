@@ -47,6 +47,10 @@ article {
       }
       padding: 3rem 0 0;
       color: $midnightblue;
+      h1, h2 {
+        font-size: 1em;
+        display: inline;
+      }
     }
     .post-date {
       font-size: 0.8em;

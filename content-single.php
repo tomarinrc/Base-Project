@@ -1,7 +1,7 @@
 <article>
   <section class="post-top-angle"></section>
   <section class="post-content">
-    <h1 class="post-title"><?php the_title(); ?></h1>
+    <div class="post-title"><?php if ( get_post_custom_values('post-number') ) { ?><?php echo get_post_meta($post->ID, 'post-number', true); ?>&nbsp;|&nbsp;<?php } ?><h1><?php the_title(); ?></h1></div>
     <span class="post-date"><?php the_date(); ?> <span class="post-author">by <?php the_author(); ?></span></span>
     <?php if ( has_post_thumbnail() ) { ?>
       <figure class="post-featured">

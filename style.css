@@ -158,6 +158,9 @@ article .post-content {
     @media (max-width: 480px) {
       article .post-content .post-title {
         margin: 0 2rem; } }
+    article .post-content .post-title h1, article .post-content .post-title h2 {
+      font-size: 1em;
+      display: inline; }
   article .post-content .post-date {
     font-size: 0.8em;
     margin: 0 4rem;
