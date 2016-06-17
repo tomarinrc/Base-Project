@@ -158,7 +158,8 @@ article .post-content {
     @media (max-width: 480px) {
       article .post-content .post-title {
         margin: 0 2rem; } }
-    article .post-content .post-title h1, article .post-content .post-title h2 {
+    article .post-content .post-title h1,
+    article .post-content .post-title h2 {
       font-size: 1em;
       display: inline; }
   article .post-content .post-date {
@@ -196,6 +197,16 @@ article .post-content {
       font-style: italic; }
     article .post-content .post-copy p {
       margin: 0 0 2rem !important; }
+    article .post-content .post-copy h2 {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin: 3rem 0 0.4rem; }
+    article .post-content .post-copy ul {
+      margin: 0 0 2rem !important; }
+      article .post-content .post-copy ul li {
+        list-style: disc;
+        padding: 0.4rem 2rem;
+        margin: 0 2rem; }
     article .post-content .post-copy div.wp-caption {
       width: 100% !important; }
       article .post-content .post-copy div.wp-caption img {
