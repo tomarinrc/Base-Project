@@ -90,19 +90,35 @@ article {
     }
     .post-copy {
       margin: 4rem;
+      del {
+        color: $silver;
+      }
       em {
         font-style: italic;
       }
       p {
-        margin: 0 0 2rem !important;
+        margin: 0 0 3rem !important;
       }
       h2 {
         font-size: 1.2em;
         font-weight: 700;
-        margin: 3rem 0 0.4rem;
+        margin: 3rem 0 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        &:after {
+          background-color: $clouds;
+          content: '\a0';
+          flex-grow: 1;
+          height: 1px;
+          position: relative;
+          top: 0.5em;
+          margin-left: 10px;
+        }
       }
       ul {
-        margin: 0 0 2rem !important;
+        margin: -2rem 0 2rem !important;
         li {
           list-style: disc;
           padding: 0.4rem 2rem;
